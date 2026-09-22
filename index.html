@@ -6,23 +6,17 @@
 
 <title>Tehmina Anwar | AI Developer</title>
 
-<meta name="description"
-content="Tehmina Anwar - AI Developer, Python Developer and AI Automation enthusiast.">
-
 <style>
 :root{
     --rose:#d63384;
     --pink:#ff4f9a;
-    --pink-light:#ffe1ee;
-    --pink-soft:#fff5f9;
-    --lavender:#eee7ff;
     --purple:#7950d8;
-    --cream:#fff9fc;
+    --light:#fff7fb;
+    --lavender:#f3edff;
     --dark:#2b1b25;
-    --muted:#725f6b;
+    --text:#705f69;
     --white:#ffffff;
     --border:#f0c8da;
-    --shadow:0 18px 50px rgba(96,38,69,.12);
 }
 
 *{
@@ -37,7 +31,7 @@ html{
 
 body{
     font-family:"Segoe UI",Arial,sans-serif;
-    background:var(--cream);
+    background:var(--light);
     color:var(--dark);
     line-height:1.7;
 }
@@ -49,22 +43,23 @@ a{
 
 .container{
     width:90%;
-    max-width:1120px;
+    max-width:1100px;
     margin:auto;
 }
 
 /* NAVBAR */
+
 header{
     position:sticky;
     top:0;
     z-index:1000;
-    background:rgba(255,255,255,.92);
-    backdrop-filter:blur(16px);
+    background:rgba(255,255,255,.94);
+    backdrop-filter:blur(15px);
     border-bottom:1px solid var(--border);
 }
 
 nav{
-    min-height:74px;
+    min-height:72px;
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -81,15 +76,10 @@ nav{
 
 .nav-links{
     display:flex;
-    align-items:center;
-    gap:30px;
+    gap:28px;
     font-size:14px;
     font-weight:700;
     color:#654e5b;
-}
-
-.nav-links a{
-    transition:.25s;
 }
 
 .nav-links a:hover{
@@ -97,8 +87,9 @@ nav{
 }
 
 /* HERO */
+
 .hero{
-    min-height:90vh;
+    min-height:88vh;
     display:flex;
     align-items:center;
     text-align:center;
@@ -107,84 +98,64 @@ nav{
 
     background:
         radial-gradient(
-            circle at 12% 18%,
+            circle at 10% 20%,
             rgba(255,79,154,.20),
-            transparent 27%
-        ),
-        radial-gradient(
-            circle at 88% 20%,
-            rgba(121,80,216,.18),
             transparent 28%
         ),
         radial-gradient(
-            circle at 50% 100%,
-            rgba(214,51,132,.10),
-            transparent 35%
+            circle at 90% 20%,
+            rgba(121,80,216,.18),
+            transparent 28%
         ),
         linear-gradient(
             135deg,
-            #fff7fb 0%,
-            #ffffff 48%,
-            #faf7ff 100%
+            #fff5f9,
+            #ffffff,
+            #f8f4ff
         );
 }
 
 .hero::before{
     content:"✦";
     position:absolute;
-    top:14%;
-    left:9%;
+    top:15%;
+    left:8%;
     font-size:48px;
-    color:#ff91bc;
-    animation:float 4s ease-in-out infinite;
+    color:#ff8bb8;
 }
 
 .hero::after{
     content:"♡";
     position:absolute;
-    right:9%;
-    bottom:14%;
-    font-size:80px;
-    color:#d7c5fa;
-    animation:float 5s ease-in-out infinite reverse;
-}
-
-@keyframes float{
-    0%,100%{
-        transform:translateY(0);
-    }
-
-    50%{
-        transform:translateY(-12px);
-    }
+    bottom:12%;
+    right:8%;
+    font-size:75px;
+    color:#d9c8fa;
 }
 
 .badge{
     display:inline-block;
     padding:9px 20px;
-    margin-bottom:25px;
+    margin-bottom:24px;
     border-radius:50px;
 
     background:linear-gradient(
         135deg,
         #fff0f6,
-        #f3edff
+        #f1ebff
     );
 
     border:1px solid #efbfd5;
     color:var(--rose);
     font-size:13px;
     font-weight:800;
-
-    box-shadow:
-        0 8px 25px rgba(214,51,132,.08);
 }
 
 h1{
-    font-size:clamp(45px,7vw,78px);
-    line-height:1.08;
+    font-size:clamp(45px,7vw,76px);
+    line-height:1.1;
     letter-spacing:-2px;
-    margin-bottom:23px;
+    margin-bottom:22px;
 }
 
 .gradient{
@@ -202,9 +173,9 @@ h1{
 }
 
 .hero p{
-    max-width:700px;
+    max-width:680px;
     margin:auto;
-    color:var(--muted);
+    color:var(--text);
     font-size:17px;
 }
 
@@ -213,12 +184,11 @@ h1{
     justify-content:center;
     flex-wrap:wrap;
     gap:14px;
-    margin-top:32px;
+    margin-top:30px;
 }
 
 .btn{
-    display:inline-block;
-    padding:13px 26px;
+    padding:13px 25px;
     border-radius:50px;
     font-size:14px;
     font-weight:800;
@@ -247,41 +217,39 @@ h1{
 
 .btn:hover{
     transform:translateY(-4px);
-
-    box-shadow:
-        0 15px 35px rgba(96,38,69,.16);
 }
 
-/* GENERAL SECTIONS */
+/* SECTIONS */
+
 section{
-    padding:90px 0;
+    padding:85px 0;
 }
 
 .section-title{
     text-align:center;
-    margin-bottom:48px;
+    margin-bottom:45px;
 }
 
 .section-title h2{
-    font-size:38px;
-    line-height:1.2;
-    margin-bottom:10px;
+    font-size:37px;
+    margin-bottom:8px;
 }
 
 .section-title p{
-    color:#8a7480;
+    color:#8b7782;
     font-size:14px;
 }
 
 /* ABOUT */
+
 .about{
-    max-width:850px;
+    max-width:820px;
     margin:auto;
     text-align:center;
 }
 
 .about p{
-    color:#6f5e68;
+    color:var(--text);
     font-size:16px;
     margin-bottom:18px;
 }
@@ -294,28 +262,29 @@ section{
     display:grid;
     grid-template-columns:repeat(4,1fr);
     gap:18px;
-    margin-top:42px;
+    margin-top:38px;
 }
 
 .info-card{
-    padding:25px 15px;
+    padding:24px 14px;
     background:white;
     border:1px solid var(--border);
-    border-radius:20px;
-    box-shadow:var(--shadow);
+    border-radius:18px;
+
+    box-shadow:
+        0 15px 35px rgba(96,38,69,.08);
+
     transition:.3s;
 }
 
 .info-card:hover{
-    transform:translateY(-7px);
-    border-color:#e99abc;
+    transform:translateY(-6px);
 }
 
 .info-card small{
     display:block;
     color:#b34b78;
     font-size:12px;
-    font-weight:700;
     margin-bottom:7px;
 }
 
@@ -325,65 +294,54 @@ section{
 }
 
 /* SKILLS */
-.skills-section{
-    background:
-        radial-gradient(
-            circle at 15% 30%,
-            rgba(255,79,154,.08),
-            transparent 30%
-        ),
-        linear-gradient(
-            135deg,
-            #fff,
-            #fff7fb
-        );
 
-    border-top:1px solid #f4dce7;
-    border-bottom:1px solid #f4dce7;
+.skills-section{
+    background:white;
+    border-top:1px solid #f3dce7;
+    border-bottom:1px solid #f3dce7;
 }
 
 .skills{
     display:flex;
-    flex-wrap:wrap;
     justify-content:center;
-    gap:15px;
-    max-width:900px;
+    flex-wrap:wrap;
+    gap:14px;
+    max-width:850px;
     margin:auto;
 }
 
 .skill{
-    padding:13px 22px;
+    padding:13px 21px;
     border-radius:50px;
-    background:white;
+
+    background:#fff6fa;
     border:1px solid var(--border);
+
     color:#684c5a;
     font-size:14px;
     font-weight:700;
-
-    box-shadow:
-        0 8px 22px rgba(96,38,69,.06);
 
     transition:.3s;
 }
 
 .skill:hover{
     color:var(--rose);
-    background:#fff0f6;
-    border-color:#eb91b5;
+    background:#ffeaf3;
     transform:translateY(-4px);
 }
 
 /* BIRTHDAY APP */
+
 .birthday-section{
     background:
         radial-gradient(
             circle at 10% 15%,
-            rgba(255,79,154,.17),
-            transparent 28%
+            rgba(255,79,154,.18),
+            transparent 30%
         ),
         radial-gradient(
             circle at 90% 80%,
-            rgba(121,80,216,.17),
+            rgba(121,80,216,.18),
             transparent 30%
         ),
         linear-gradient(
@@ -394,67 +352,29 @@ section{
 }
 
 .birthday-card{
-    position:relative;
-    max-width:900px;
+    max-width:850px;
     margin:auto;
-    padding:55px 40px;
+    padding:55px 35px;
     text-align:center;
 
-    background:rgba(255,255,255,.91);
+    background:rgba(255,255,255,.92);
 
     border:1px solid #efc4d7;
     border-radius:30px;
 
     box-shadow:
-        0 25px 65px rgba(96,38,69,.14);
+        0 25px 60px rgba(96,38,69,.14);
 
-    overflow:hidden;
-    transition:.35s;
-}
-
-.birthday-card::before{
-    content:"";
-    position:absolute;
-
-    width:190px;
-    height:190px;
-
-    border-radius:50%;
-
-    background:#ffe0ec;
-
-    top:-100px;
-    left:-90px;
-}
-
-.birthday-card::after{
-    content:"";
-    position:absolute;
-
-    width:190px;
-    height:190px;
-
-    border-radius:50%;
-
-    background:#e8dcff;
-
-    right:-100px;
-    bottom:-110px;
+    transition:.3s;
 }
 
 .birthday-card:hover{
     transform:translateY(-7px);
 }
 
-.birthday-content{
-    position:relative;
-    z-index:2;
-}
-
 .birthday-icon{
     width:82px;
     height:82px;
-
     margin:0 auto 22px;
 
     display:flex;
@@ -471,20 +391,17 @@ section{
         );
 
     font-size:40px;
-
-    box-shadow:
-        0 12px 30px rgba(214,51,132,.12);
 }
 
 .birthday-card h3{
     font-size:30px;
-    margin-bottom:10px;
+    margin-bottom:12px;
 }
 
 .birthday-card p{
-    max-width:690px;
-    margin:0 auto;
-    color:#75636e;
+    max-width:680px;
+    margin:auto;
+    color:var(--text);
     font-size:15px;
 }
 
@@ -497,14 +414,13 @@ section{
 }
 
 .tag{
-    padding:7px 13px;
+    padding:7px 14px;
     border-radius:30px;
 
     background:#fff3f8;
     border:1px solid #f0c5d8;
 
     color:#9a4269;
-
     font-size:12px;
     font-weight:700;
 }
@@ -518,13 +434,14 @@ section{
 }
 
 /* JOURNEY */
+
 .journey{
-    max-width:780px;
+    max-width:760px;
     margin:auto;
 }
 
 .journey-item{
-    padding:27px 30px;
+    padding:25px 28px;
     margin-bottom:18px;
 
     background:white;
@@ -545,19 +462,20 @@ section{
 }
 
 .journey-item p{
-    color:#75646e;
+    color:var(--text);
     font-size:14px;
 }
 
 /* CONTACT */
+
 .contact-section{
     background:white;
 }
 
 .contact{
-    max-width:880px;
+    max-width:850px;
     margin:auto;
-    padding:65px 30px;
+    padding:60px 30px;
     text-align:center;
 
     background:
@@ -568,7 +486,7 @@ section{
         ),
         radial-gradient(
             circle at 85% 80%,
-            rgba(121,80,216,.13),
+            rgba(121,80,216,.14),
             transparent 30%
         ),
         linear-gradient(
@@ -580,13 +498,14 @@ section{
     border:1px solid var(--border);
     border-radius:30px;
 
-    box-shadow:var(--shadow);
+    box-shadow:
+        0 20px 50px rgba(96,38,69,.10);
 }
 
 .contact p{
     max-width:620px;
     margin:15px auto;
-    color:#75636e;
+    color:var(--text);
 }
 
 .socials{
@@ -594,11 +513,11 @@ section{
     justify-content:center;
     flex-wrap:wrap;
     gap:12px;
-    margin-top:30px;
+    margin-top:28px;
 }
 
 .socials a{
-    padding:10px 20px;
+    padding:10px 19px;
 
     background:white;
 
@@ -615,14 +534,14 @@ section{
 
 .socials a:hover{
     color:var(--rose);
-    border-color:#e99aba;
     transform:translateY(-3px);
 }
 
 /* FOOTER */
+
 footer{
     text-align:center;
-    padding:32px 20px;
+    padding:30px 20px;
 
     background:#fff8fb;
 
@@ -637,6 +556,7 @@ footer{
 }
 
 /* MOBILE */
+
 @media(max-width:800px){
 
     .info{
@@ -659,7 +579,7 @@ footer{
     }
 
     .nav-links{
-        gap:9px;
+        gap:8px;
         font-size:10px;
     }
 
@@ -669,7 +589,6 @@ footer{
 
     h1{
         font-size:43px;
-        letter-spacing:-1px;
     }
 
     .hero p{
@@ -713,11 +632,13 @@ Tehmina<span>.AI</span>
 </a>
 
 <div class="nav-links">
+
 <a href="#home">Home</a>
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
 <a href="#birthday">Birthday App</a>
 <a href="#contact">Contact</a>
+
 </div>
 
 </nav>
@@ -726,7 +647,7 @@ Tehmina<span>.AI</span>
 </header>
 
 
-<!-- HERO -->
+<!-- HOME -->
 <section class="hero" id="home">
 
 <div class="container">
@@ -736,7 +657,8 @@ Tehmina<span>.AI</span>
 </div>
 
 <h1>
-Hi, I'm <span class="gradient">Tehmina Anwar</span>
+Hi, I'm
+<span class="gradient">Tehmina Anwar</span>
 </h1>
 
 <p>
@@ -757,7 +679,7 @@ GitHub ↗
 <a
 class="btn btn-secondary"
 href="#contact">
-Let's Connect
+Contact Me
 </a>
 
 </div>
@@ -804,7 +726,6 @@ I love turning ideas into useful digital solutions
 and continuously improving my technical skills.
 </p>
 
-
 <div class="info">
 
 <div class="info-card">
@@ -814,7 +735,7 @@ and continuously improving my technical skills.
 
 <div class="info-card">
 <small>💻 Focus</small>
-<strong>AI / ML Engineering</strong>
+<strong>AI / ML</strong>
 </div>
 
 <div class="info-card">
@@ -823,8 +744,8 @@ and continuously improving my technical skills.
 </div>
 
 <div class="info-card">
-<small>🚀 Interests</small>
-<strong>AI & Automation</strong>
+<small>🚀 Interest</small>
+<strong>AI Automation</strong>
 </div>
 
 </div>
@@ -855,7 +776,6 @@ Technologies I am learning and working with.
 
 </div>
 
-
 <div class="skills">
 
 <div class="skill">🐍 Python</div>
@@ -874,7 +794,7 @@ Technologies I am learning and working with.
 </section>
 
 
-<!-- ONLY PROJECT: BIRTHDAY APP -->
+<!-- ONLY BIRTHDAY APP -->
 <section
 id="birthday"
 class="birthday-section">
@@ -884,19 +804,16 @@ class="birthday-section">
 <div class="section-title">
 
 <h2>
-My <span class="gradient">Featured App</span> 🎂
+<span class="gradient">Birthday App</span> 🎂
 </h2>
 
 <p>
-A special interactive website created with love.
+A special website created with love.
 </p>
 
 </div>
 
-
 <div class="birthday-card">
-
-<div class="birthday-content">
 
 <div class="birthday-icon">
 🎂
@@ -913,7 +830,6 @@ beautiful animations. A special digital gift from a
 husband to his beloved wife.
 </p>
 
-
 <div class="tags">
 
 <span class="tag">HTML</span>
@@ -923,7 +839,6 @@ husband to his beloved wife.
 <span class="tag">Netlify</span>
 
 </div>
-
 
 <div class="buttons">
 
@@ -938,20 +853,19 @@ Open Birthday App 🎁
 class="btn btn-secondary"
 href="https://github.com/TehminaAutomation"
 target="_blank">
-TehminaAutomation GitHub ↗
+GitHub ↗
 </a>
 
 </div>
-
 
 <a
 class="live-link"
 href="https://birthday-surprise-for-my-wife.netlify.app/"
 target="_blank">
-birthday-surprise-for-my-wife.netlify.app ↗
-</a>
 
-</div>
+birthday-surprise-for-my-wife.netlify.app ↗
+
+</a>
 
 </div>
 
@@ -977,7 +891,6 @@ Learning and growing in Artificial Intelligence.
 
 </div>
 
-
 <div class="journey">
 
 <div class="journey-item">
@@ -993,7 +906,6 @@ Machine Learning and modern AI technologies.
 
 </div>
 
-
 <div class="journey-item">
 
 <h3>
@@ -1007,7 +919,6 @@ learning concepts to practical projects.
 
 </div>
 
-
 <div class="journey-item">
 
 <h3>
@@ -1020,7 +931,6 @@ application development.
 </p>
 
 </div>
-
 
 <div class="journey-item">
 
@@ -1058,18 +968,15 @@ Let's <span class="gradient">Connect</span>
 </h2>
 
 <p>
-Have an idea? Let's build something useful.
+Feel free to reach out.
 </p>
 
 </div>
 
-
 <p>
-I am interested in learning new technologies,
-building AI applications and connecting with
-developers and professionals in the AI field.
+Interested in AI, automation and building useful
+digital solutions.
 </p>
-
 
 <div class="buttons">
 
@@ -1083,11 +990,10 @@ GitHub ↗
 <a
 class="btn btn-secondary"
 href="tel:03431723801">
-📞 0343 1723801
+📞 Call Me
 </a>
 
 </div>
-
 
 <div class="socials">
 
@@ -1099,7 +1005,7 @@ target="_blank">
 
 <a
 href="tel:03431723801">
-📞 0343 1723801
+📞 03431723801
 </a>
 
 <a
